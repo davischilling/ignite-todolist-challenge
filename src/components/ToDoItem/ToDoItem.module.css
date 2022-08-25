@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  min-height: 4.5rem;
+}
+
+.wrapper + .wrapper {
+  margin-top: 0.75rem;
+}
+
+.wrapper button {
+  display: flex;
+  align-items: flex-start;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+  border: 0;
+
+  transition: background-color 0.1s;
+}
+
+.wrapper span {
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.notFinishedTask {
+  color: var(--white);
+}
+
+.finishedTask {
+  text-decoration-line: line-through;
+  color: var(--gray-300);
+}

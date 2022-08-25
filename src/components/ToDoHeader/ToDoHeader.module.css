@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.wrapper button {
+  display: flex;
+  align-items: center;
+  background: var(--gray-500);
+  color: var(--white);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  line-height: 0;
+  border: 0;
+}
+
+.createdTask {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.finishedTask {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.createdTask strong {
+  color: var(--blue-light);
+}
+
+.finishedTask strong {
+  color: var(--purple-light);
+}
+
+
+/* .finishedTask button {
+  background: var(--gray-500);
+  color: var(--white);
+} */
